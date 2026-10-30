@@ -1,0 +1,8 @@
+numpy
+pandas
+dotenv
+openai
+transformers
+tqdm
+aiohttp
+openpyxl

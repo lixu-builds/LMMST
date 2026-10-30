@@ -1,0 +1,26 @@
+{
+    "short_in_short_out": {
+        "log": "短输入短输出",
+        "max_tokens_num": 20
+    },
+    "short_in_long_out":{
+        "log": "短输入长输出",
+        "max_tokens_num": 500
+    },
+    "long_in_short_out": {
+        "log": "长输入短输出",
+        "max_tokens_num": 20
+    },
+    "long_in_long_out": {
+        "log": "长输入长输出",
+        "max_tokens_num": 500
+    },
+    "1500_in_3500_out": {
+        "log": "1500输入3500输出",
+        "max_tokens_num": 3500
+    },
+    "3500_in_1500_out": {
+        "log": "3500输入1500输出",
+        "max_tokens_num": 1500
+    }
+}
