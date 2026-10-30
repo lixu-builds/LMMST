@@ -93,9 +93,9 @@ class BaseConfig:
 
     def merge_format_str(self, avg, p95=None, p99=None, min_tps=None):
         if p95 and p99:
-            return f"平均：{avg}<br>p95：{p95}<br>p99：{p99}"
+            return f"平均：{avg}<br> p95：{p95}<br> p99：{p99}"
         elif min_tps:
-            return f"平均：{avg}<br>最小：{min_tps}"
+            return f"平均：{avg}<br> 最小：{min_tps}"
         else:
             return f"平均：{avg}"
 
