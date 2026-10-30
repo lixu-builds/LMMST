@@ -209,7 +209,7 @@ class MdGenerator(BaseConfig):
 
         # 计算成功率范围
         min_rate, max_rate = min(rates), max(rates)
-        rate_range = f"{min_rate:.1%}~{max_rate:.1%}" if min_rate != max_rate else f"{min_rate:.1%}"
+        rate_range = f"{min_rate:.1%}-{max_rate:.1%}" if min_rate != max_rate else f"{min_rate:.1%}"
 
         # 计算TRT范围
         trt_range = self.merge_format_str(
@@ -360,7 +360,7 @@ class MdGenerator(BaseConfig):
         valid = [v for v in values if v is not None and pd.notna(v)]
         if not valid:
             return 'N/A'
-        return (f"{min(valid):.1f}~{max(valid):.1f}"
+        return (f"{min(valid):.1f}-{max(valid):.1f}"
                 if min(valid) != max(valid) else f"{min(valid):.1f}")
 
     def format_time_range(self, min_value: float, max_value: float) -> str:
@@ -370,7 +370,7 @@ class MdGenerator(BaseConfig):
         min_formatted = self.format_time_value(min_value)
         max_formatted = self.format_time_value(max_value)
 
-        return f"{min_formatted}~{max_formatted}" if min_formatted != max_formatted else min_formatted
+        return f"{min_formatted}-{max_formatted}" if min_formatted != max_formatted else min_formatted
 
 
 if __name__ == '__main__':
